@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Registration and Showing Page</title>
+  <link href="{{ url_for('static', path='style.css') }}" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script src="{{ url_for('static', path='home.js') }}"></script>
+  
+</head>
+<body>
+  <h1>User Registration and Showing Page</h1>
+  <!-- User Registration Form -->
+  <h2>Registration Form</h2> 
+  <form id="registerform" enctype="multipart/form-data">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone" required>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+
+    <label for="profile">Profil PIcture:</label>
+    <input type="file" id="profile" name="profile" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <!-- User Information Table -->
+  <h2>User Information</h2>
+  <table id="detailstb">
+    <thead>
+      <tr>
+        <th>Full Name:</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>View</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</body>
+
+<script>
+  
+</script>
+</html>
+
